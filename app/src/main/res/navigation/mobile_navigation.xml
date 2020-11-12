@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/orders">
+
+
+
+    <fragment
+        android:id="@+id/orders"
+        android:name="com.example.androideco.ui.orders"
+        android:label="Orders"
+        tools:layout="@layout/orders_fragment" />
+    <fragment
+        android:id="@+id/rewards"
+        android:name="com.example.androideco.ui.Rewards"
+        android:label="Rewards"
+        tools:layout="@layout/rewards_fragment" />
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.androideco.ui.Cart"
+        android:label="Cart"
+        tools:layout="@layout/cart_fragment" />
+    <fragment
+        android:id="@+id/nav_wishlist"
+        android:name="com.example.androideco.ui.wishlist"
+        android:label="Wishlist"
+        tools:layout="@layout/wishlist_fragment" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.androideco.ui.Account"
+        android:label="Account"
+        tools:layout="@layout/account_fragment" />
+</navigation>
